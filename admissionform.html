@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="form,admissionform,cit form">
+    <title>Admission Form</title>
+</head>
+<body style="background-color:lightcyan;">
+    <a href="index.html">
+        <img src="src/img/logo.png" alt="CIT Logo" width="50px" height="50px" style="display: inline;">
+    </a>
+    <h1 title="Coimbatore institute of Technology" style="display: inline;font: size 300px;" >Coimbatore Institute of Technology
+    </h1>
+    <br><br><br>
+    <form action="#" method="post">
+        <fieldset style="width:70%">  
+            <legend><strong><em>Student Application Form</em></strong></legend>
+                <fieldset>
+                    <legend><strong><em>Personal Information</em></strong></legend>
+                    <table>
+                        <tr>
+                            <td>
+                                <label><strong>First Name:</strong></label><br><br>
+                            </td>
+                            <td>
+                                <input type="text" name="firstname" id="1"><br><br>
+                            </td>
+                            <td>
+                                <label><strong>Last Name:</strong></label><br><br>
+                            <td>
+                                <input type="text" name="lastname" id="2"><br><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label><strong>Father Name:</strong></label><br><br>
+                            </td>
+                            <td>
+                                <input type="text" name="fathername" id="3"><br><br>
+                            </td>
+                            <td>
+                                <label><strong>Mother Name:</strong></label><br><br>
+                            <td>
+                                <input type="text" name="mothername" id="4"><br><br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="dob"><strong>Date Of Birth:</strong></label><br><br>
+                            </td>
+                            <td>
+                                <input type="date" name="dob" id="5" min="1975" max="2005"><br><br>
+                            </td>
+                            <td>
+                                <label for="gender"><strong>Gender:</strong></label><br><br>
+                            </td>
+                            <td>
+                                <select name="gender" id="6">
+                                    <option value="0" selected>None</option>
+                                    <option value="1">Male</option>
+                                    <option value="2">Female</option>
+                                    <option value="3">Others</option>
+                                </select>
+                                <br><br>
+                            </td>
+                            <td>
+                                <label for="email"><strong>Email:</strong></label><br><br>
+                            </td>
+                            <td>
+                                <input type="email" name="email" id="24"><br><br>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <fieldset>
+                    <legend><strong><em>Contact Information</em></strong></legend>
+                    <table>
+                        <tr>
+                            <td>
+                                <label for="address"><strong>Address:</strong></label><br><br>
+                            </td>
+                            <td>
+                                <textarea name="addess" id="13" cols="25" rows="5"></textarea><br><br>
+                            </td>
+                            <td>
+                                <label for="residentialaddress"><strong>Residential Address:</strong></label><br><br>
+                            </td>
+                            <td>
+                                <textarea name="residentialaddess" id="13" cols="25" rows="5"></textarea><br><br>
+                            </td>
+                            <td>
+                                <label for="contactnumber"><strong>Contact Number:</strong></label><br><br>
+                            </td>
+                            <td>
+                                <input type="tel" name="contactnumber" id="8"><br><br>
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <fieldset>
+                    <legend><strong><em>Academic History</em></strong></legend>
+                    <table border="1px" cellspacing="0">
+                        <tr>
+                            <th>Course</th>
+                            <th>Institution</th>
+                            <th>University/Board</th>
+                            <th>CGPA/Percentage</th>
+                            <th>Period</th>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="course1" id="9" placeholder="Course"></td>
+                            <td><input type="text" name="institution1" id="10" placeholder="Institution"></td>
+                            <td><input type="text" name="University1" id="11" placeholder="University"></td>
+                            <td><input type="number"" name="percentage1" id="12" placeholder="Percentage"></td>
+                            <td><input type="text" name="Period1" id="13" placeholder="Period"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="course2" id="14" placeholder="Course"></td>
+                            <td><input type="text" name="institution2" id="15" placeholder="Institution"></td>
+                            <td><input type="text" name="University2" id="16" placeholder="University"></td>
+                            <td><input type="number"" name="percentage2" id="17" placeholder="Percentage"></td>
+                            <td><input type="text" name="Period2" id="18" placeholder="Period"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="course3" id="19" placeholder="Course"></td>
+                            <td><input type="text" name="institution3" id="19" placeholder="Institution"></td>
+                            <td><input type="text" name="University3" id="20" placeholder="University"></td>
+                            <td><input type="number"" name="percentage3" id="21" placeholder="Percentage"></td>
+                            <td><input type="text" name="Period3" id="22" placeholder="Period"></td>
+                        </tr>
+                    </table>
+                </fieldset>    
+                <fieldset>
+                    <legend><strong><em>Declaration</em></strong></legend>
+                    <input type="checkbox" name="declaration" id="25">
+                    <span>The Information furnished above is correct to the best of my knowledge</span><br><br><br>
+                    <label for="dateoffilling"><strong>Date:</strong></label>
+                    <input type="date" name="dateoffilling" id="26"><br><br>
+                    <label for="place"><strong>Place:</strong></label>
+                    <input type="text" name="place" id="27">
+                    <br><br><input type="submit" value="Submit" title="Submit">
+                    <input type="reset" value="Reset" title="Reset">
+                </fieldset>
+        </fieldset>
+    </form>
+</body>
+</html>
